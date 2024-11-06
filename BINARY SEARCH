@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main
+{   
+    public static int calculate(int[] num,int leo){
+        int start=0;
+        int end=num.length-1;
+        while(start<=end){
+            int mid=(start+end)/2;
+            if(num[mid]==leo){
+                return mid;
+            }
+            else if(num[mid]<leo){
+                start=mid+1;
+            }
+            else{
+                end=mid-1;
+            }
+        }
+        return -1;
+    }
+	public static void main(String[] args) {
+	    Scanner amaran=new Scanner(System.in);
+	    int[] num={100,20,30,40,50,25,65,75};
+	    System.out.println("Enter element to find in array:");
+	    int leo=amaran.nextInt();
+	    int res=calculate(num,leo);
+	    if(res!=-1)
+	    System.out.println("The element found in "+res);
+	    else
+	    System.out.println("Element not found in array");
+	    
+	}
+}
