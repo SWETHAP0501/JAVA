@@ -1,0 +1,13 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String str = "Swetha";
+	    Set<Character> name = new HashSet<>();
+	    for(char ch: str.toCharArray()){
+	        name.add(ch);
+	    }
+		System.out.println(name);
+}
+}
