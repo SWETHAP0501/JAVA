@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        int n=5,a=1,b=2, c=0;
+        for(int i=0;i<n-2;i++){
+          
+            c=a+b;
+            a=b;
+            b=c;
+           
+        }
+        System.out.println(c);
+    }
+}
+//ipa 5 nu input kudutha athuiku ethana possible stpes of using 1 and 2 eg)11111,1112,122,2111,221,212,1211,1121
