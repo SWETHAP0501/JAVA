@@ -1,3 +1,13 @@
+/*op: print prime no. between 1 to 100
+  constrains: 
+         1)2 digit prime no.
+         2)sum of digits even
+         3)first digit odd 
+         (no need to find (3) because if (2) is true this condition also satisfies)      */
+
+
+
+
 import java.util.*;
 public class Main
 {
